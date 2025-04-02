@@ -1,4 +1,4 @@
-API - StoreManager
+# API - StoreManager
 
 A API StoreManager é uma solução robusta para gerenciamento de lojas, desenvolvida em ASP.NET Core 8.0 com C#. Esta API facilita operações essenciais de comércio, incluindo o gerenciamento completo de clientes, produtos, pedidos e itens de pedidos. Com uma arquitetura bem estruturada seguindo padrões modernos de desenvolvimento, a API oferece endpoints organizados para todas as operações CRUD necessárias, consultas por faixas de preço e relacionamentos entre entidades. Implementada com Entity Framework Core e documentada via Swagger, a solução é ideal para sistemas de e-commerce e gestão de vendas que necessitam de um backend robusto e escalável.
 
