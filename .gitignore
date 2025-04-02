@@ -4,6 +4,7 @@
 
 # Ignorar arquivos de configuração do .NET
 appsettings.json
+appsettings.Development.json
 
 # Ignorar diretórios de build e output
 bin/
