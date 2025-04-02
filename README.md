@@ -53,6 +53,7 @@ Exemplos de endpoints disponíveis:
 - `PUT /api/itens/{id}` - Atualiza um item pedido existente pelo ID
 - `DELETE /api/itens/{id}` - pedido um item pedido existente pelo ID
 
+
 ## Instalação
 ```bash
 # Clone o repositório
@@ -67,6 +68,7 @@ dotnet restore
 # Atualize o banco de dados com as migrations
 dotnet ef database update
 ```
+
 
 ## Estrutura do Projeto
 
@@ -84,6 +86,7 @@ dotnet ef database update
 │   │   └── Program.cs                # Ponto de entrada da aplicação
 ```
 
+
 ## Configuração
 
 1. Atualize a string de conexão no arquivo `appsettings.json`:
@@ -97,6 +100,7 @@ dotnet ef database update
 ```
 
 2. Configure quaisquer outros parâmetros necessários (chaves de API, configurações de autenticação, etc.)
+
 
 ## Como Executar
 
@@ -113,16 +117,6 @@ dotnet run
 A API estará disponível em: `https://localhost:7066/` (ou a porta configurada)
 
 
-## Boas Práticas Implementadas
-
-- Validação de entradas com FluentValidation
-- Tratamento global de exceções
-- Logging estruturado com Serilog
-- Versionamento da API
-- Documentação com Swagger
-- Padrão Repository e Unit of Work
-- CQRS (se implementado)
-
 ## Contribuição
 
 1. Faça um Fork do projeto
@@ -137,6 +131,6 @@ Este projeto está licenciado sob a licença MIT - veja o arquivo LICENSE.md par
 
 ## Contato
 
-Seu Nome - [@seuTwitter](https://twitter.com/seuTwitter) - email@exemplo.com
+Seu Nome - Victor André Lopes Brasileiro - valb1@ic.ufal.br
 
-Link do Projeto: [https://github.com/seu-usuario/seu-repositorio](https://github.com/seu-usuario/seu-repositorio)
+Link do Projeto: [https://github.com/VictorBrasileiroo/StoreManager-AP]([https://github.com/seu-usuario/seu-repositorio](https://github.com/VictorBrasileiroo/StoreManager-AP))
