@@ -1,4 +1,5 @@
 # 📱 API StoreManager
+<img src="https://github.com/VictorBrasileiroo/StoreManager-API/blob/main/banner.png">
 
 ![.NET Core](https://img.shields.io/badge/.NET%20Core-8.0-purple)
 ![C#](https://img.shields.io/badge/C%23-12-blue)
