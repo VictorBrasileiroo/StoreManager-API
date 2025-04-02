@@ -29,6 +29,32 @@ Implementada com Entity Framework Core e documentada via Swagger, a solução é
 - SQL Server
 - Git
 
+## 🔄 Fluxo de Funcionamento
+
+O sistema segue uma lógica específica para o relacionamento entre entidades:
+
+```mermaid
+graph TD
+    A[Cliente] -->|1:N| B[Pedido]
+    C[Produto] -->|1:N| D[Item Pedido]
+    B[Pedido] -->|1:N| D[Item Pedido]
+```
+
+### Fluxo de Criação de Pedido:
+
+1. **Clientes e Produtos** são criados de forma independente através de suas respectivas rotas
+2. Para criar um **Pedido**:
+   - Primeiro, faça um `POST /api/pedido` com o ID do cliente para criar um pedido com valor total = 0
+   - O sistema retorna o ID do pedido recém-criado
+3. Para adicionar **Itens ao Pedido**:
+   - Faça um `POST /api/itens` com o ID do pedido, ID do produto e quantidade
+   - O sistema automaticamente calcula o subtotal do item e atualiza o valor total do pedido
+   - Cada item adicionado incrementa o valor total do seu respectivo pedido
+   - O ato de excluir ou alterar itens do pedido modifica diretamente o valor total.
+   - É possível adicionar múltiplos itens ao mesmo pedido
+
+Este fluxo permite a construção progressiva do pedido conforme itens são adicionados, refletindo o comportamento de um carrinho de compras real.
+
 ## 📚 Documentação da API
 
 Acesse a documentação completa da API através do Swagger: `https://localhost:7066/swagger/`
