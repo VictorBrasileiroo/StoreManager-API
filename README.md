@@ -16,8 +16,9 @@ Implementada com Entity Framework Core e documentada via Swagger, a solução é
 
 ## 🛠️ Tecnologias Utilizadas
 
-- ASP.NET Core 8.0
-- C# 11
+- ASP.NET Core 3.1
+- .NET 8
+- C# 12
 - Entity Framework Core
 - SQL Server
 - Swagger/OpenAPI
